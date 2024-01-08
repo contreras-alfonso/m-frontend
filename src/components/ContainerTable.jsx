@@ -13,7 +13,7 @@ export const ContainerTable = ({ data, setModalImagen, setPathImagen }) => {
         <table className="w-full mt-5">
           <thead>
             <tr>
-              <th className="font-semibold text-sm">Monto</th>
+              <th className="font-semibold text-sm">Monto S/</th>
               <th className="font-semibold text-sm">Categoria</th>
               <th className="font-semibold text-sm">RUC</th>
               <th className="font-semibold text-sm">Imagen</th>
