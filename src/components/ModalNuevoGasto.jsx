@@ -31,7 +31,7 @@ export const ModalNuevoGasto = ({ modalNuevoGasto, setModalNuevoGasto }) => {
   const handleRegistroGasto = async (e) => {
     e.preventDefault();
 
-    const { file } = selectedImage;
+   
     const allowedImageMimeTypes = ["image/jpeg", "image/webp", "image/png"];
 
     if (Object.values(gasto).includes(""))
@@ -45,6 +45,8 @@ export const ModalNuevoGasto = ({ modalNuevoGasto, setModalNuevoGasto }) => {
 
     if (!selectedImage)
       return toast.info("Debe seleccionar la imagen del recibo.");
+
+    const { file } = selectedImage;
 
     if (!allowedImageMimeTypes.includes(file.type))
       return toast.info("Seleccione un tipo de imagen correcto.");
